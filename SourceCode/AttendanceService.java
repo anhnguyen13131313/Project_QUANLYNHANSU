@@ -21,4 +21,7 @@ public class AttendanceService {
         }
         return count;
     }
+    public ArrayList<AttendanceRecord> getAllRecords() {
+        return records;
+    }
 }
