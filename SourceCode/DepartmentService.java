@@ -1,7 +1,6 @@
 package SourceCode;
 
-// DepartmentService.java
-// Xử lý nghiệp vụ cho phòng ban: thêm, xem, sửa, xóa
+// class xử lý các chức năng cho phòng ban là thêm, xem, sửa, xóa
 import java.util.ArrayList;
 public class DepartmentService {
     private ArrayList<Department> list = new ArrayList<>();
@@ -11,7 +10,7 @@ public class DepartmentService {
         list.add(d);
     }
 
-    // Lấy tất cả phòng ban
+    // Lấy tất cả phòng ban 
     public ArrayList<Department> getAll() {
         return list;
     }

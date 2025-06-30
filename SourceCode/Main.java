@@ -1,7 +1,6 @@
 package SourceCode;
 
-// Main.java
-// Chương trình chính với menu console 7 chức năng
+// Chương trình chính với menu1 7 chức năng
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {

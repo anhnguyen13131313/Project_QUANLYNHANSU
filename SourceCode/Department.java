@@ -2,9 +2,9 @@ package SourceCode;
 // Department.java
 // Lưu thông tin phòng ban
 public class Department {
-    private String id;          // Mã phòng ban, ví dụ "D001"
-    private String name;        // Tên phòng ban
-    private String description; // Mô tả ngắn
+    private String id;          // mã của phòng ban ạ, ví dụ như là A001
+    private String name;        // Tên của phòng ban
+    private String description; // Mô tả ngắn về phòng ban
 
     public Department(String id, String name, String description) {
         this.id = id;

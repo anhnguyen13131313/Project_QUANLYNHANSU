@@ -1,6 +1,5 @@
 package SourceCode;
 
-// EmployeeMenu.java
 import java.util.Scanner;
 public class EmployeeMenu {
     public static void show(Scanner sc, EmployeeService empService, DepartmentService deptService) {

@@ -1,13 +1,12 @@
 package SourceCode;
 
-// Employee.java
-// Lớp trừu tượng mô tả nhân viên chung
+// lớp abstract mô tả nhân viên chung 
 public abstract class Employee {
-    protected String id;         // Mã nhân viên, ví dụ "E001"
-    protected String name;       // Tên nhân viên
-    protected String email;      // Email nhân viên
-    protected Department dept;   // Phòng ban (liên kết đến Department)
-    protected double baseSalary; // Lương cơ bản hoặc đơn giá/ngày
+    protected String id;         // mã nhân viên, ví dụ "E001"
+    protected String name;       // tên nhân viên
+    protected String email;      // email nhân viên
+    protected Department dept;   // phòng ban, được liên kết đến lớp Department
+    protected double baseSalary; // lương cơ bản nếu là loại fulltime hoặc đơn giá/ngày cho intern và part time
 
     public Employee(String id, String name, String email, Department dept, double baseSalary) {
         this.id = id;
@@ -17,12 +16,12 @@ public abstract class Employee {
         this.baseSalary = baseSalary;
     }
 
-    // Các phương thức lấy thông tin cơ bản
+    // các phương thức get lấy các thông tin
     public String getId() { return id; }
     public String getName() { return name; }
     public String getEmail() { return email; }
     public Department getDept() { return dept; }
 
-    // Phương thức tính lương phải do lớp con định nghĩa
+    // phương thức tính lương phải do lớp con định nghĩa vì được khai báo là abstract, và mỗi lớp con sẽ có các tính lương khác nhau
     public abstract double calculateSalary(int daysAttended);
 }

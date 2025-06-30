@@ -1,7 +1,6 @@
 package SourceCode;
 
-// EmployeeService.java
-// Xử lý nghiệp vụ cho nhân viên: thêm, xem, sửa, xóa, tìm kiếm
+// xử lý nghiệp vụ cho nhân viên: thêm, xem, sửa, xóa, tìm kiếm
 import java.util.ArrayList;
 public class EmployeeService {
     private ArrayList<Employee> list = new ArrayList<>();
@@ -29,7 +28,7 @@ public class EmployeeService {
         }
         return false;
     }
-    // Tìm nhân viên theo tên chứa keyword
+    // tìm nhân viên theo tên chứa keyword, khong cần nhập chính xác tên của nhân viên muốn tìm
     public ArrayList<Employee> searchByName(String keyword) {
         ArrayList<Employee> result = new ArrayList<>();
         for (Employee e : list) {
@@ -39,7 +38,7 @@ public class EmployeeService {
         }
         return result;
     }
-    // Tìm nhân viên theo ID phòng ban
+    // tìm nhân viên theo ID của phòng ban
     public ArrayList<Employee> searchByDept(String deptId) {
         ArrayList<Employee> result = new ArrayList<>();
         for (Employee e : list) {

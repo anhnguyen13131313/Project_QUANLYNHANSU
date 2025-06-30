@@ -1,6 +1,5 @@
 package SourceCode;
 
-// Intern.java
 // Thực tập sinh, tính lương giống bán thời gian
 public class Intern extends Employee {
     public Intern(String id, String name, String email, Department dept, double stipendPerDay) {

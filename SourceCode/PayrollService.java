@@ -1,7 +1,6 @@
 package SourceCode;
 
-// PayrollService.java
-// Tạo báo cáo bảng lương in ra console
+// Tạo báo cáo bảng lương in ra console gồm ID, tên, Dept, Days, và tổng lương(Salary)
 import java.util.ArrayList;
 public class PayrollService {
     private EmployeeService empService;
@@ -19,7 +18,7 @@ public class PayrollService {
         for (Employee e : all) {
             int days = attService.getDaysAttended(e.getId());
             double salary = e.calculateSalary(days);
-            // Định dạng in ra cột, dùng String.format cho dễ đọc
+            // Định dạng in ra cột
             System.out.println(String.format("%-5s | %-14s | %-4s | %-4d | %.2f",
                 e.getId(), e.getName(), e.getDept().getId(), days, salary));
         }
